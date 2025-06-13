@@ -280,8 +280,7 @@ class FlutterKeychainPlugin : FlutterPlugin, MethodCallHandler {
     private var channel: MethodChannel? = null
     private val WRAPPED_AES_KEY_ITEM = "W0n5hlJtrAH0K8mIreDGxtG"
 
-    companion object {
-        private const val channelName = "plugin.appmire.be/flutter_keychain"
+    private  val channelName = "plugin.appmire.be/flutter_keychain"
 
         lateinit private var encryptor: StringEncryptor
         lateinit private var preferences: SharedPreferences
